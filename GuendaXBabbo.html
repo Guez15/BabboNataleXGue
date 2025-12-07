@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Da Guenda x Babbo Natale </title>
+    </head>
+    <style>
+        body {
+            background-image: url("https://img.freepik.com/vettori-gratuito/sfondo-disegnato-a-mano-per-la-stagione-natalizia_23-2150976231.jpg?semt=ais_se_enriched&w=740&q=80");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .letterina {
+           width: 90%;             
+            max-width: 1100px;      
+            height: auto;
+            border: 5px solid red;
+            border-radius: 15px;
+            margin: 80px auto;
+            padding: 25px;
+            background-color: aliceblue;
+            box-sizing: border-box;
+        }
+        p {
+            font-size: 1.2rem; 
+            line-height: 1.5;
+        }
+        .clickable {
+            color: #0077ff;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .message {
+                margin-top: 15px;
+                font-size: 1.2rem;
+                font-weight: bold;
+                color:orangered;
+                display: none; 
+        }
+        h1 {
+            color: darkorange;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        /* Media query per smartphone */
+        @media screen and (max-width: 600px) {
+            .letterina {
+                margin: 20px auto;
+                padding: 15px;
+                border-width: 3px;
+            }
+            p, .message {
+                font-size: 1rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+    <body>
+        <div class = "letterina">
+            <h1>Caro Babbo Natale</h1>
+            <p>Anche quest'anno ti scrivo, lo so che stai pensando "hai 20 anni, oramai sei grande per queste cose" però 
+                amen, fattene una ragione, anche perché mi ha dato il via libera mia nonna. <br><br>
+                Non sopporto il freddo, preferisco sciogliermi al sole che avere il raffreddore, non so come tu faccia a  
+                vivere perennemente in questa situazione, ma anche costantemente in aria di festa... si sono belle le feste,
+                ma a te piacciono perché vai tu a casa degli altri e mangi sempre. <br>
+                Toglimi una curiosità, su che base la fai la tua Black-list? come scegli i criteri? <br>
+                Hai varie spie nel mondo che raccolgono informazioni su tutti e poi le inseriscono in qualche database 
+                nascosto al Polo Nord, oppure sei più moderno e hai dei droni/piccioni robot? <br>
+                Magari è colpa tua se esistono i complottisti dei piccioni o gente che si sente sempre spiata...
+                Boh, chissà. <br><br>
+                Smetto di farmi domande ok, ma questi complotti esistono veramente, solo un'ultima cosa: <br>
+                Se tu sei sempre tutto, come mai vuoi una letterina con scritti i regali? Per come sei tu potresti
+                tranquillamente vedere la cronologia delle persone o, meglio ancora, prendere i cookie di ognuno di noi, 
+                tanto tutti accettano sempre tutto nei siti. Hai ragione, magari mantieni la tradizione. <br><br>
+                Vabbè, capisco anche che hackerare me sarebbe difficile, ho troppe password difficilii, non accetto
+                mai nulla e cancello la cronologia, quindi provo a darti una mano dai, tanto lo sai già il mio
+                <span id="clickText" class="clickable" id="bravura">livello di bravura</span>. 
+                <span id="msg" class="message">Ragazza bravissima, precisa, tranquilla, amorevole, che fa tante cose, calma anche
+                    quando manda i curriculum e non le rispondono, amante del tiramisù.
+                </span>
+                <br>
+                Quest'anno vorrei circa 30CFU, so che non sono pochi, me ne bastano anche 10... TI PREGO <br>
+                se proprio non riesci ho un piano B, vorrei un KOBO BW, oppure un Kindle BW, fai tu. Leggere da computer sta 
+                diventando più che scomodo, con un aggeggio di quel tipo potrei leggere in più posti e con meno fatica
+                (di spazio, di peso e di vista). <br><br>
+                Ti ringrazio, mi raccomando aggiornati anche tu che è importante. <br>
+                Buon viaggio! <br>
+                Guenda
+            </p>
+            
+            <script>
+                const clickable = document.getElementById("clickText");
+                const msg = document.getElementById("msg");
+                clickable.addEventListener("click", function() {
+                    msg.style.display = "block";
+                    setTimeout(() => {
+                        msg.style.display = "none";
+                    }, 5000);
+                });
+            </script>
+        </div>
+    </body>
+</html>
